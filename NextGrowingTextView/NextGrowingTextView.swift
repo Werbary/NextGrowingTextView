@@ -197,7 +197,6 @@ open class NextGrowingTextView: UIScrollView {
         let newScrollViewFrame = measureFrame(actualTextViewSize)
 
         if oldScrollViewFrame.height != newScrollViewFrame.height && newScrollViewFrame.height <= maxHeight {
-            flashScrollIndicators()
             delegates.willChangeHeight(newScrollViewFrame.height)
         }
 
